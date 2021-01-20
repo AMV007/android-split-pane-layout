@@ -231,7 +231,7 @@ class SplitPaneLayout : ViewGroup {
         when (mOrientation) {
             ORIENTATION_HORIZONTAL -> {
                 getChildAt(0).layout(0, 0, mSplitterPosition - mSplitterSize / 2, height)
-                getChildAt(1).layout(mSplitterPosition + mSplitterSize / 2, 0, right, height)
+                getChildAt(1).layout(mSplitterPosition + mSplitterSize / 2, 0, width, height)
             }
             ORIENTATION_VERTICAL -> {
                 getChildAt(0).layout(0, 0, width, mSplitterPosition - mSplitterSize / 2)
